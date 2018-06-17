@@ -26,4 +26,11 @@ class User extends Authenticatable
     protected $hidden = [
         'password', 'remember_token',
     ];
+    
+    // 複数形 (1対多の関係)
+    public function posts()
+    {
+        // 記事を新しい順で取得する
+        return $this->hasMany('App\Post')->latest();
+    }
 }
