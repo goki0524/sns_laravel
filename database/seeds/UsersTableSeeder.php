@@ -16,8 +16,8 @@ class UsersTableSeeder extends Seeder
 
         // 固定ユーザーを作成
         DB::table('users')->insert([
-            'name' => 'sutara79',
-            'email' => 'toumin.m7@gmail.com',
+            'name' => 'goki0524',
+            'email' => 'goki0524@gmail.com',
             'password' => bcrypt('1234'),
             'created_at' => $faker->dateTime(),
             'updated_at' => $faker->dateTime(),
